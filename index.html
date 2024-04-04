@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="icon.png">
+  <title>SheHacks</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+
+  <div class="containers">
+
+
+    <div class="left-container">
+      <div id="large-header" class="large-header" style="height: 340px;">
+        <canvas id="demo-canvas" width="1366" height="340"></canvas>
+      </div>
+    </div>
+
+    <div class="right-container">
+
+      <div class="story">
+        <div class="container">
+          <h2 class="glitch">
+            SheHacks
+          </h2>
+        </div>
+        <p>
+          SheHacks is IIITA's premier women-only tech event, where women coding enthusiasts converge for three days of tech talks, workshops, and an exhilarating 36-hour hackathon. Designed to foster learning, collaboration, and innovation, SheHacks offers aspiring female developers a platform to showcase their skills, tackle real-world challenges, and connect with like-minded individuals. Join us in this inclusive and empowering environment as we hack our way towards a more inclusive and digitally empowered future.
+           <div class="big-wrap">
+          <div class="wrapper1">
+            <a href="#"> <b>Venue</b> : CC3 IIITA </a>
+          </div>
+          <div class="wrapper1">
+            <a href="#"><b>Time</b> : 8:30pm</a>
+          </div>
+          <div class="wrapper1">
+            <a href="#"><b>Date</b> : 8-10 Apr</a>
+          </div>
+        </div>
+        </p>
+        <div class="wrapper">
+          <button class="btn">
+            <!-- <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg> -->
+            <a class="link" href="">Register Now</a>  
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="center-container"></div>
+  </div>
+  <div class="containers-phone">
+    <div class="img"></div>
+    <div class="text">
+      <div class="container">
+        <h2 class="glitch">
+          SheHacks
+        </h2>
+      </div>
+      <p>
+        SheHacks is IIITA's premier women-only tech event, where women coding enthusiasts converge for three days of tech talks, workshops, and an exhilarating 36-hour hackathon. Designed to foster learning, collaboration, and innovation, SheHacks offers aspiring female developers a platform to showcase their skills, tackle real-world challenges, and connect with like-minded individuals. Join us in this inclusive and empowering environment as we hack our way towards a more inclusive and digitally empowered future.
+           
+      <div class="big-wrap">
+        <div class="wrapper1">
+          <a href="#"> <b>Venue</b> : CC3 IIITA </a>
+        </div>
+        <div class="wrapper1">
+          <a href="#"><b>Time</b> : 8:30pm</a>
+        </div>
+        <div class="wrapper1">
+          <a href="#"><b>Date</b> : 8-10 Apr</a>
+        </div>
+      </div>
+      </p>
+      <div class="wrapper">
+        <button class="btn">
+          <!-- <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg> -->
+          <a class="link" href="">Register Now</a>  
+      </div>
+    </div>
+  </div>
+  <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js"></script>
+  <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js"></script>
+  <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    TweenMax.from(".left-container", 2, {
+      width: "0",
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".right-container", 2, {
+      delay: 1.5,
+      width: "0",
+      opacity: "0",
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".center-container", 2, {
+      delay: 3,
+      width: "0",
+      x: -20,
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".logo", 2, {
+      delay: 1.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".info", 2, {
+      delay: 1.5,
+      y: 50,
+      opacity: 0,
+      scale: 2.5,
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".story", 2, {
+      delay: 2.5,
+      y: 20,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+    TweenMax.from(".menu", 2, {
+      delay: 3.5,
+      y: 20,
+      opacity: 0,
+      rotation: 90,
+      ease: Expo.easeInOut
+    });
+    TweenMax.staggerFrom(
+      ".social ul",
+      2,
+      {
+        delay: 3.8,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      },
+      0.1
+    );
+  </script>
+</body>
+
+</html>
